@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Smart ToDoList</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" src="styles/styles.css">
+
   </head>
   <body>
 
+    <input class="js-typing-input" type="searchbar">
+    <input class="js-date-input" type="date">
+    <select class="js-priority-input">
+      <option value="1">Low priority</option>
+      <option value="2">Medium priority</option>
+      <option value="3">High priority</option>
+    </select>
+    <button class="js-add-button">ADD</button>
+
+    <div class="js-tasks-div">
+      <div>
+        <p style="display: inline">task one</p>
+        <p style="display: inline">date</p>
+        <button class="js-delete-button">DELETE</button>
+      </div>
+    </div>
+
+  <script src="scripts/scripts.js"></script>
+  
   </body>
 </html>
