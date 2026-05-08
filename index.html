@@ -5,27 +5,37 @@
     <title>Smart ToDoList</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
   </head>
+
+
   <body>
+    <main class="main-section">
+      <div class="background-add-div">
+        <div class="add-task-div">
+          <div>
+            <input class="js-typing-input typing-input" type="searchbar" placeholder="Adicione sua task">
+            <select class="js-priority-input priority-input">
+              <option value="1">Low priority</option>
+              <option value="2">Medium priority</option>
+              <option value="3">High priority</option>
+            </select>  
+            <input class="js-date-input date-input" type="date">
 
-    <input class="js-typing-input" type="searchbar">
-    <input class="js-date-input" type="date">
-    <select class="js-priority-input">
-      <option value="1">Low priority</option>
-      <option value="2">Medium priority</option>
-      <option value="3">High priority</option>
-    </select>
-    <button class="js-add-button">ADD</button>
-
-    <div class="js-tasks-div">
-      <div>
-        <p style="display: inline">task one</p>
-        <p style="display: inline">date</p>
-        <button class="js-delete-button">DELETE</button>
+          </div>
+          
+          <button class="js-add-button add-button">ADD</button>
+        </div>
       </div>
-    </div>
+      <div class="js-all-tasks">
+        <div class="js-tasks-div js-tasks-div-high tasks-div"></div>
+        <div class="js-tasks-div js-tasks-div-medium tasks-div"></div>
+        <div class="js-tasks-div js-tasks-div-low tasks-div"></div>
+      </div>
+      
+    </main>
+   
 
   <script src="scripts/scripts.js"></script>
   
