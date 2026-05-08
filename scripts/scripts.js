@@ -3,7 +3,17 @@ let id = 0;
 
 const addButton = document.querySelector(".js-add-button");
 
+document.addEventListener("keydown", (event) => {
+  if (event.key == "Enter") {
+    addTask();
+  }
+} );
+
 addButton.addEventListener("click", () => {
+  addTask();
+});
+
+function addTask() {
   const typingInput = document.querySelector(".js-typing-input");
   const dateInput = document.querySelector(".js-date-input");
   const priorityInput = document.querySelector(".js-priority-input");
@@ -25,7 +35,7 @@ addButton.addEventListener("click", () => {
   } else {
     alert('Está faltando alguma informação da sua tarefa! (nome ou data)')
   }
-});
+}
 
 
 const tasksContainerDelete = document.querySelector(".js-all-tasks");

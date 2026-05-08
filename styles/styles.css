@@ -64,6 +64,7 @@ body {
     display: flex;
     width: 200px;
     flex-wrap: wrap;
+    overflow-wrap: anywhere;
 }
 
 .task-cont-low {
